@@ -10,7 +10,7 @@ RUN pip install -r requirements.txt
 
 # Remove unnecessary "COPY . ." command since the previous "COPY . /app" command already copied all files
 
-# Expose a port to containersPOSE
+# Expose a port to containers
 EXPOSE 8080  # Fixed typo by replacing EX with EXPOSE
 
 # Command to run on server
