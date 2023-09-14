@@ -2,13 +2,12 @@
 FROM python:3.9.7
 WORKDIR /app
 COPY . /app
-COPY requirements.txt requirements.txt
+COPY requirements.txt /app/requirements.txt   # Fixed typo in target path
 
 # Install project dependencies
 RUN pip install -r requirements.txt
 
-# Copy other project files
-COPY . .
+# Remove unnecessary "COPY . ." command
 
 # Expose a port to containers
 EXPOSE 8080
