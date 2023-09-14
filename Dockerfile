@@ -1,5 +1,6 @@
 
-FROM python:3.9.7
+#FROM python:3.9.7
+FROM python:3.9-slim
 WORKDIR /app
 COPY . /app
 #COPY requirements.txt requirements.txt   # Fixed typo in target path
