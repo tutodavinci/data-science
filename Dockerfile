@@ -11,7 +11,7 @@ RUN pip install -r requirements.txt
 # Remove unnecessary "COPY . ." command since the previous "COPY . /app" command already copied all files
 
 # Expose a port to containersPOSE
-EX 8080
+EXPOSE 8080  # Fixed typo by replacing EX with EXPOSE
 
 # Command to run on server
 CMD ["gunicorn", "-b", "0.0.0.0:8080", "app:app"]
