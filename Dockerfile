@@ -2,7 +2,7 @@
 FROM python:3.9.7
 WORKDIR /app
 COPY . /app
-COPY requirements.txt /app/requirements.txt   # Fixed typo in target path
+#COPY requirements.txt requirements.txt   # Fixed typo in target path
 
 # Install project dependencies
 RUN pip install -r requirements.txt
