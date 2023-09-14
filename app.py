@@ -6,7 +6,7 @@ import numpy as np
 import pandas as pd
 
 
-
+d=1
 
 app= Flask(__name__)
 
