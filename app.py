@@ -7,7 +7,7 @@ import pandas as pd
 
 
 
-
+a=d
 app= Flask(__name__)
 
 model=pickle.load(open('regmodel.pkl','rb'))
